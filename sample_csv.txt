@@ -1,0 +1,7 @@
+Name, Email, Tags
+Sebastien Penot, sebastien@joinhive.io, hive, example
+Ross Kinsella, rosskinsella0@gmail.com, student, coder
+Alex Mooney, ajmooney8@gmail.com, housemate
+Trent Reznor, trent@reznor.com, god, rock star, hero
+Laura, l@l.com, girl
+Example, example@example.com, student, example
