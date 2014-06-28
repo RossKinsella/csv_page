@@ -1,0 +1,30 @@
+<h1><u>The database:</u><h1>
+
+<!--	User table -->
+<h3>User table:</h3>
+<% @users.each do |user| %>   
+  <div>
+  	 <u>Id</u>: <%= user.id%>, 
+  	 <u>Name</u>: <%= user.name %>, 
+  	 <u>Email</u>: <%= user.email %> 
+  </div>
+<% end %> <!-- /User table -->
+
+<!--	Tag table -->
+<h3>Tag table:</h3>
+<% @tags.each do |tag| %>   
+  <div>
+  	<u>Id:</u> <%= tag.id%>, <u>Name:</u> <%= tag.name %>
+  </div>
+<% end %> <!-- /Tag table -->
+
+<!--	UserTag table -->
+<h3>UserTag table:</h3>
+<% @userTags.each do |userTag| %>   
+  <div>
+			<u>Id:</u> <%= userTag.id%>,
+			<u>tag_id:</u> <%= userTag.tag_id %>,
+			<u>user_id:</u> <%= userTag.user_id %>
+  </div>
+<% end %> <!-- /UserTag table -->
+
