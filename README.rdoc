@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Made using ruby 2.1.2 and rails 4.1.2
 
-Things you may want to cover:
+Launch the server and click the grey "Click me!" and select your csv.txt
+ -- Other files may work but I did not test it
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
+Note: there is a sample csv.txt in the project you may use.
 <tt>rake doc:app</tt>.
