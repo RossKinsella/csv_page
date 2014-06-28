@@ -16,11 +16,12 @@ class CsvFilesController < ApplicationController
 			for i in 2..row.size
 				# Create the tags and userTags
 			 	@tag = Tag.find_or_create_by(name: row[i])
-			 	UserTag.create(tag_id: @tag.id, user_id: @user.id)
+			 	UserTag.find_or_create_by(tag_id: @tag.id, user_id: @user.id)
 			end
 		end 
-		# Note: We use find_or_create_by to allow for line 20 to run if the
-		#       User / Tag already exists. For example: The last row of given csv.txt 	
+		# Note: I use find_or_create_by to allow for line 20 to run if the
+		#       User / Tag already exists. For example: The last row of given csv.txt 
+		#       - I also use it to revent duplicate records.
 		render :nothing => true
   end
 
