@@ -1,9 +1,7 @@
 class CsvFilesController < ApplicationController
 	skip_before_action :verify_authenticity_token
   def index
-  	@user = User.new
-  	@tag = Tag.new
-  	@user_tag = UserTag.new
+  	
   end
 
   def input
